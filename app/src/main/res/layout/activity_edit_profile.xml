@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        tools:context=".activities.EditProfile">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color_theme"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@color/main_color_theme"
+                    app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+                <TextView
+                    android:id="@+id/greetTv"
+                    style="@style/title_text"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/backButton"
+                    android:text="Edit Profile"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="15dp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/main_action_bar"
+            android:background="@drawable/tv_rounded_corners"
+            style="@style/title_text"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="20dp"
+            android:textSize="24sp"
+            android:hint="Name"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/nameEt"
+            android:background="@drawable/tv_rounded_corners"
+            style="@style/title_text"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="20dp"
+            android:textSize="24sp"
+            android:hint="Email (ends with @gmail.com)"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:backgroundTint="@color/main_color_theme"
+            android:paddingHorizontal="80dp"
+            android:paddingVertical="10dp"
+            android:text="SAVE"
+            android:textSize="32sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailEt" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wightSetEt"
+    android:layout_width="75dp"
+    android:layout_height="wrap_content"
+    android:background="@color/exercise_list_color"
+    android:padding="10dp"
+    style="@style/exCard_style"
+    android:inputType="number"
+    android:textSize="25sp"/>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "909258873909",
+    "project_id": "woappproject-95287",
+    "storage_bucket": "woappproject-95287.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909258873909:android:af4e2f2caf040deb3ea57c",
+        "android_client_info": {
+          "package_name": "com.aryopraset.woapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA887I8GiDEg7x_CaXWU0602rHxKsDeZU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

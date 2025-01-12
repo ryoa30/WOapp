@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color_theme"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        tools:context=".fragments.EditExerciseFragment">
+
+        <TextView
+            android:id="@+id/exNameTv"
+            android:layout_alignParentTop="true"
+            style="@style/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercise Name"
+            android:paddingTop="20dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp" />
+
+        <EditText
+            android:layout_below="@+id/exNameTv"
+            android:id="@+id/exNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/exercise_list_color"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp"
+            style="@style/exCard_style"
+            android:textSize="25sp"
+            android:hint="Exercise Name"
+            />
+
+        <TextView
+            android:id="@+id/exSetEt"
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sets"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@+id/exNameEt" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:id="@+id/spinnerWrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@+id/exSetEt"
+            app:boxBackgroundColor="@color/exercise_list_color">
+
+            <AutoCompleteTextView
+                android:id="@+id/setSpinner"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:inputType="none"
+                android:dropDownHeight="200dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <TextView
+            style="@style/title_text"
+            android:id="@+id/weightTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weights"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@+id/exNameEt"
+            android:layout_toRightOf="@+id/spinnerWrapper"
+            />
+
+        <GridLayout
+            android:id="@+id/weightsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/spinnerWrapper"
+            android:layout_below="@+id/weightTv"
+            android:columnCount="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/repsTv"
+            android:text="Target Reps"
+            android:layout_below="@+id/weightsContainer"
+            style="@style/title_text"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp" />
+
+        <EditText
+            android:id="@+id/exMinRepsEt"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@color/exercise_list_color"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp"
+            android:layout_below="@+id/repsTv"
+            style="@style/exCard_style"
+            android:inputType="number"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stripTv"
+            android:text="--"
+            android:layout_below="@+id/repsTv"
+            android:layout_toRightOf="@+id/exMinRepsEt"
+            style="@style/title_text"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp" />
+
+        <EditText
+            android:id="@+id/exMaxRepsEt"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@color/exercise_list_color"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp"
+            android:layout_below="@+id/repsTv"
+            android:layout_toRightOf="@id/stripTv"
+            style="@style/exCard_style"
+            android:inputType="number"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/restTv"
+            android:text="Rest Time"
+            android:layout_below="@+id/weightsContainer"
+            android:layout_toRightOf="@id/exMaxRepsEt"
+            style="@style/title_text"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="20dp" />
+
+        <EditText
+            android:id="@+id/exRestEt"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:background="@color/exercise_list_color"
+            android:layout_marginVertical="5dp"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:layout_below="@+id/restTv"
+            android:layout_toRightOf="@id/exMaxRepsEt"
+            style="@style/exCard_style"
+            android:inputType="number"
+            android:ems="2"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/ibtRtTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:paddingVertical="10dp"
+            android:textSize="25sp"
+            android:layout_below="@+id/restTv"
+            android:layout_toRightOf="@id/exRestEt"
+            style="@style/title_text"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="5dp" />
+
+        <EditText
+            android:id="@+id/exRestSecEt"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:background="@color/exercise_list_color"
+            android:layout_marginVertical="5dp"
+            android:padding="10dp"
+            android:layout_below="@+id/restTv"
+            android:layout_toRightOf="@id/ibtRtTv"
+            style="@style/exCard_style"
+            android:inputType="number"
+            android:ems="2"
+            android:textSize="25sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonLL"
+            android:layout_below="@id/exMinRepsEt"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/addBtn"
+                style="@style/button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="10dp"
+                android:text="Add"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/saveBtn"
+                style="@style/button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="10dp"
+                android:text="Save"
+                app:cornerRadius="20dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/deleteBtn"
+                style="@style/button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="10dp"
+                android:text="Del"
+                app:cornerRadius="20dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

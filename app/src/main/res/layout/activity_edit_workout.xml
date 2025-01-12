@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:backgroundTint="@color/background_color"
+        tools:context=".activities.EditWorkoutActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_action_bar"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color_theme"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@color/main_color_theme"
+                    app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+                <TextView
+                    android:id="@+id/greetTv"
+                    style="@style/title_text"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/backButton"
+                    android:text="@string/edit_exercise_text"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="15dp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_action_bar"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/monBtn"
+                    style="@style/button_style"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="30dp"
+                    android:text="Mon"
+                    android:textSize="32sp"
+                    app:cornerRadius="15dp" />
+
+                <Button
+                    android:id="@+id/tueBtn"
+                    style="@style/button_style"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="30dp"
+                    android:text="Tue"
+                    android:textSize="32sp"
+                    app:cornerRadius="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/wedBtn"
+                    style="@style/button_style"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="30dp"
+                    android:text="Wed"
+                    android:textSize="32sp"
+                    app:cornerRadius="15dp" />
+
+                <Button
+                    android:id="@+id/thurBtn"
+                    style="@style/button_style"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="30dp"
+                    android:text="Thur"
+                    android:textSize="32sp"
+                    app:cornerRadius="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/friBtn"
+                    style="@style/button_style"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="30dp"
+                    android:text="Fri"
+                    android:textSize="32sp"
+                    app:cornerRadius="15dp" />
+
+                <Button
+                    android:id="@+id/satBtn"
+                    style="@style/button_style"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="30dp"
+                    android:text="Sat"
+                    android:textSize="32sp"
+                    app:cornerRadius="15dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sunBtn"
+                style="@style/button_style"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="30dp"
+                android:text="Sun"
+                android:textSize="32sp"
+                app:cornerRadius="15dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

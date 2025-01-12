@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_color_theme">#D41616</color>
+    <color name="background_color">#333030</color>
+    <color name="basic_button_color">#FF7A00</color>
+    <color name="exercise_list_color">#D9D9D9</color>
+    <color name="rest_color">#14E910</color>
+    <color name="blue_color">#00BAF5</color>
+</resources>

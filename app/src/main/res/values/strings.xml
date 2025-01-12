@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">WOapp</string>
+    <string name="home_title_placeholder">Hi, [PlaceHolder]</string>
+    <string name="day_placeholder">[day]</string>
+    <string name="start_button">START</string>
+    <string name="home_fab_desc">edit workouts</string>
+    <string name="edit_exercise_text">Edit Exercise</string>
+    <string name="edit_day_wo_placeholder">Edit [DAY]</string>
+    <string name="start_workout_bar">Move [_]</string>
+    <string-array name="set_numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
